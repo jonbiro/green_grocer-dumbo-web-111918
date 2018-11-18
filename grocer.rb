@@ -1,3 +1,4 @@
+require "pry"
 def consolidate_cart(cart)
   consolidated_cart = {}
   cart.each do |product|
@@ -14,7 +15,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  # code here
+  coupon_item_list = []
+  valid_number = 0
+
+  coupons.each do |coupon|
+    coupon_item_list << coupon[:item]
 end
 
 def apply_clearance(cart)
