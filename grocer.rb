@@ -15,11 +15,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  coupon_item_list = []
-  valid_number = 0
+  cart = consolidate_cart(cart)
 
   coupons.each do |coupon|
-    coupon_item_list << coupon[:item]
+  binding.pry
+  end
 end
 
 def apply_clearance(cart)
