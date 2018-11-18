@@ -18,7 +18,7 @@ def apply_coupons(cart, coupons)
 
   coupons.each do |coupon|
     #see if there are enough items to apply_coupons
-    if cart[coupon[:item]] && cart[coupon][:item][:count]] >= coupon[:num]
+    if cart[coupon[:item]] && cart[coupon][:item][:count]] => coupon[:num]
       cart[coupon][:item][:count]] -= coupon[:num]
       cart << {"#{coupon[:item]} W/COUPON" => {:price => coupon[:cost], :clearance => cart[coupon[:item][:clearance]], :count => 1}}
     end
