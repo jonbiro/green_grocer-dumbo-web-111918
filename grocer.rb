@@ -15,7 +15,6 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  cart = consolidated_cart(cart)
 
   coupons.each do |coupon|
   binding.pry
